@@ -6,14 +6,14 @@
     <title>js-1</title>
 </head>
 <body style="background-color: antiquewhite;">
-    <h1 id="heading">Java Script</h1>
+    <h1 id="hello">Java Script</h1>
     <script>
         let name = prompt("Enter your name : ");
-        let y = document.getElementById('heading').innerHTML = `Hello ${name} from documentgetElementById()`;
+        let y = document.getElementById('hello').innerHTML = `Hello ${name} from documentgetElementById()`;
         document.write(`Hello ${name} from document.write()`);
         console.log(`Hello ${name} from console.`);
         alert(`Hello ${name}`);
-
+//for Mathematical operations
         alert("Enter Values For Mathematical Operation");
         let num1 = prompt('Enter First number  : ');
         let num2 = prompt('Enter Second number  : ');
@@ -39,7 +39,7 @@
             default:
                 alert('Wrong choice please select right one!');
         }
-
+//for printing even numbers
         let n = prompt('Enter how many even numbers you Want to print : ');
         document.write('Printing First ${n} Even numbers <br/>');
         for(let i=0;i<2*n;i++){
@@ -47,7 +47,7 @@
                 document.write(i,", ");
             }
         }
-
+//for half pyramid
         document.write('<br/>Half Pyramid<br/>')
         let x = prompt("Enter n  value to print pyramid ");
         for(let i=0;i<x;i++){
@@ -56,19 +56,15 @@
             }
             document.write('<br/>');
         }
-
+//for full pyramid
         document.write('<br/>Full Pyramid</br>')
-
         for(let i=x;i>=0;i--){
-            for(let j=i;j>=0;j--){
-                document.write(`&nbsp;`);
-            }
+            for(let j=i;j>=0;j--)
             for(let j=0;j<=(x-i);j++){
                 document.write('* ');
             }
             document.write('<br/>');
         }
-
-    </script>
-
+</script>
 </body>
+</html>
